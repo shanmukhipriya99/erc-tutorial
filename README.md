@@ -52,5 +52,9 @@ contract MyContract is ERC20 {
     constructor(uint256 totalSupply) public ERC20("MyToken", "MYT") {        //token name: MyToken, token symbol: MYT
         _balances[msg.sender] = totalSupply;
     }
+    
+    //your functions here
 }
 ```
+
+Another way to use the above functions and events is in the Example.sol file.
