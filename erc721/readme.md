@@ -65,16 +65,16 @@ We can import them into our smart contract by:
 
 We can then inherit the functions in our smart contract by:
 ```
-contract MyContract is ERC20 {
-    constructor(uint256 totalSupply) public ERC20("MyToken", "MYT") {        //token name: MyToken, token symbol: MYT
-        _balances[msg.sender] = totalSupply;
-    }
-    
+contract MyContract is ERC721 {
+    constructor() ERC721("MyNFT", "MNFT") {}              //token name: MyNFT, token symbol: MNFT    
     //your functions here
 }
 ```
 
-Another way to use the above functions and events is in the Example.sol file.
+A more detailed tutorial is available in the tutorial.md file.
 
 ### References
 * https://www.quicknode.com/guides/solidity/how-to-create-and-deploy-an-erc-721-nft
+* https://ethereum.org/ca/developers/tutorials/how-to-write-and-deploy-an-nft/#connect-to-ethereum
+* https://docs.opensea.io/docs/1-structuring-your-smart-contract
+* https://medium.com/crypto-currently/the-anatomy-of-erc721-e9db77abfc24
