@@ -18,10 +18,10 @@ A few frequently used functions are:
 * BalanceOf: provides account balance of the owner's account
 
 ```function balanceOf(address tokenOwner) public view returns (uint);```
-* Transfer: executes transfers of a specified number of tokens to a specified address
+* Transfer: executes transfers of a specified number of tokens to a specified address from the total supply
 
 ```function transfer(address to, uint tokens) public returns (bool);```
-* TransferFrom: executes transfers of a specified number of tokens from a specified address
+* TransferFrom: executes transfers of a specified number of tokens from a specified address (between users)
 
 ```function transferFrom(address from, address to, uint tokens) public returns (bool);```
 * Approve: allow a spender to withdraw a set number of tokens from a specified account
